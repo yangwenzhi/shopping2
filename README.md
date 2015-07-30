@@ -1,3 +1,5 @@
+# shopping2
+
 上线需要配置
 
 * ./config/etc.json
