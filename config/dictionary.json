@@ -1,0 +1,263 @@
+{
+	"es": {
+		"home" : "Recomendación",
+		"checkitout": "Échale un vistazo",
+		"buyproduct": "Comprar producto",
+		"share": "Compartir",
+		"category": [
+			{
+				"id": "35",
+				"name": "Populares",
+				"title": "Jiggy Bonga - House of Funk That Hunts Your Junks",
+				"keyword": "Jiggy Bonga,Creative Design,Awesome Stuff,Cool Gifts,Fashion,Accessories,Beauty,Sports & Fitness,Kids,Electronics,Home & Garden",
+				"description": "Ever expanding list of creative stuff to buy online, so if you're looking for cool things to buy this is for you, not for the faint of wallet."
+			},
+			{
+				"id": "33",
+				"name": "Moda",
+				"title": "Fashion Clothing,Shoes,Swimwear,Handbags and more on JiggyBonga.com",
+				"keyword": "Find a fashion selection of clothing,shoes and more from jiggybonga.com.Looking for trends in fashion!",
+				"description": "Ever expanding list of creative stuff to buy online, so if you're looking for cool things to buy this is for you, not for the faint of wallet."
+			},
+			{
+				"id": "20",
+				"name": "Arte",
+				"title": "Creative Stuff to Buy on JiggyBonga.com,Find Everything You Can Thinnk of!",
+				"keyword": "Awesome Stuff,Creative,Design,Cool Gifts,Idea,jiggybonga.com",
+				"description": "This is the best place to find products that have the most amazing or the dumbest ideas."
+			},
+			{
+				"id": "34",
+				"name": "Accesorios",
+				"title": "Accessories Directory of Jewelry,Watches,Eyewear Frames,Belts & Cummerbunds and more on JiggyBonga.com",
+				"keyword": "Accessories,Jwewlry,Watches,Eyewear Frames, Belts & Cummerbunds, jiggybonga.com",
+				"description": "Find a wide selection of jewelry,watches and accessories from jiggybonga.com.Looking for trends in fashion!"
+			},
+			{
+				"id": "17",
+				"name": "Belleza",
+				"title": "Health & Beauty Directory of Nails Tools, Health Care and more on JiggyBonga.com",
+				"keyword": "beauty, beauty products,Hot selling, health care,health, makeup, skin, hair, nails, fragrance",
+				"description": "Find a wide selection of Health & Beauty,Nails & Tools and more from jiggybonga.com.Find everything you want and never thought of !"
+			},
+			{
+				"id": "16",
+				"name": "Deportes y Tiempo libre",
+				"title": "High-tech Sports & fitness supply. Directory of Sports Clothing, Fishing and more on JiggyBonga.com",
+				"keyword": "Clothing - Sports & Fitness,Sports & Entertainment,treadmills, elliptical trainers, yoga gear, strength training equipment, functional fitness gear, fitness technology, athletic clothing",
+				"description": "Find a wide selection of high-tech Sports & fitness supply,Sports Clothing and more from jiggybonga.com.Find everything you want and never thought of!"
+			},
+			{
+				"id": "18",
+				"name": "Bebés & Niños",
+				"title": "Kids Directory of Baby Clothing, Toys, Games,Diapering & Feeding Items and more on JiggyBonga.com",
+				"keyword": "baby gifts, diapering, feeding items, strollers,toys,games",
+				"description": "Find a wide selection of Baby Clothing,Toys, Games,Diapering & Feeding tools and more from jiggybonga.com.Find everything you want and never thought of!"
+			},
+			{
+				"id": "11",
+				"name": "Electrónica",
+				"title": "Electronics Directory of Computer Components, Networking and more on JiggyBonga.com",
+				"keyword": "Computer & Office, Computer Components, USB,Power,Case,Keybord,Mouse",
+				"description": "Find a wide selection of Computer Components, electronics accessories,iphone cases and more from jiggybonga.com. Find everything you want and never thought of!"
+			},
+			{
+				"id": "19",
+				"name": "Casa y jardín",
+				"title": "Home & Garden Directory of Painting & Calligraphy, Clocks,Bedding,Barware, Cookware and more on JiggyBonga.com",
+				"keyword": "Barware, Cookware,Kitchen,Dining & Bar,Home Textile,Bedding, Window Treatments,Wall Paper, Garden furniture",
+				"description": "Find a wide selection of Painting & Calligraphy, Clocks,Bedding,Barware, Cookware and more from jiggybonga.com.Find everything you want and never thought of!"
+			}
+		]
+	},
+	"ru": {
+		"home" : "рекомендация",
+		"checkitout": "Зацени",
+		"buyproduct": "купить продукт",
+		"share": "Поделиться",
+		"category": [
+			{
+				"id": "35",
+				"name": "Бестселлеры",
+				"title": "Jiggy Bonga - House of Funk That Hunts Your Junks",
+				"keyword": "Jiggy Bonga,Creative Design,Awesome Stuff,Cool Gifts,Fashion,Accessories,Beauty,Sports & Fitness,Kids,Electronics,Home & Garden",
+				"description": "Ever expanding list of creative stuff to buy online, so if you're looking for cool things to buy this is for you, not for the faint of wallet."
+			},
+			{
+				"id": "33",
+				"name": "Одежда",
+				"title": "Fashion Clothing,Shoes,Swimwear,Handbags and more on JiggyBonga.com",
+				"keyword": "Find a fashion selection of clothing,shoes and more from jiggybonga.com.Looking for trends in fashion!",
+				"description": "Ever expanding list of creative stuff to buy online, so if you're looking for cool things to buy this is for you, not for the faint of wallet."
+			},
+			{
+				"id": "20",
+				"name": "искусство",
+				"title": "Creative Stuff to Buy on JiggyBonga.com,Find Everything You Can Thinnk of!",
+				"keyword": "Awesome Stuff,Creative,Design,Cool Gifts,Idea,jiggybonga.com",
+				"description": "This is the best place to find products that have the most amazing or the dumbest ideas."
+			},
+			{
+				"id": "34",
+				"name": "Аксессуары",
+				"title": "Accessories Directory of Jewelry,Watches,Eyewear Frames,Belts & Cummerbunds and more on JiggyBonga.com",
+				"keyword": "Accessories,Jwewlry,Watches,Eyewear Frames, Belts & Cummerbunds, jiggybonga.com",
+				"description": "Find a wide selection of jewelry,watches and accessories from jiggybonga.com.Looking for trends in fashion!"
+			},
+			{
+				"id": "17",
+				"name": "Красота и Здоровье",
+				"title": "Health & Beauty Directory of Nails Tools, Health Care and more on JiggyBonga.com",
+				"keyword": "beauty, beauty products,Hot selling, health care,health, makeup, skin, hair, nails, fragrance",
+				"description": "Find a wide selection of Health & Beauty,Nails & Tools and more from jiggybonga.com.Find everything you want and never thought of !"
+			},
+			{
+				"id": "16",
+				"name": "Спортивный",
+				"title": "High-tech Sports & fitness supply. Directory of Sports Clothing, Fishing and more on JiggyBonga.com",
+				"keyword": "Clothing - Sports & Fitness,Sports & Entertainment,treadmills, elliptical trainers, yoga gear, strength training equipment, functional fitness gear, fitness technology, athletic clothing",
+				"description": "Find a wide selection of high-tech Sports & fitness supply,Sports Clothing and more from jiggybonga.com.Find everything you want and never thought of!"
+			},
+			{
+				"id": "18",
+				"name": "Для детей",
+				"title": "Kids Directory of Baby Clothing, Toys, Games,Diapering & Feeding Items and more on JiggyBonga.com",
+				"keyword": "baby gifts, diapering, feeding items, strollers,toys,games",
+				"description": "Find a wide selection of Baby Clothing,Toys, Games,Diapering & Feeding tools and more from jiggybonga.com.Find everything you want and never thought of!"
+			},
+			{
+				"id": "11",
+				"name": "Электроника",
+				"title": "Electronics Directory of Computer Components, Networking and more on JiggyBonga.com",
+				"keyword": "Computer & Office, Computer Components, USB,Power,Case,Keybord,Mouse",
+				"description": "Find a wide selection of Computer Components, electronics accessories,iphone cases and more from jiggybonga.com. Find everything you want and never thought of!"
+			},
+			{
+				"id": "19",
+				"name": "Дом и Зоотовары",
+				"title": "Home & Garden Directory of Painting & Calligraphy, Clocks,Bedding,Barware, Cookware and more on JiggyBonga.com",
+				"keyword": "Barware, Cookware,Kitchen,Dining & Bar,Home Textile,Bedding, Window Treatments,Wall Paper, Garden furniture",
+				"description": "Find a wide selection of Painting & Calligraphy, Clocks,Bedding,Barware, Cookware and more from jiggybonga.com.Find everything you want and never thought of!"
+			}
+		]
+	},
+	"en": {
+		"home" : "Home",
+		"checkitout": "Check it out",
+		"buyproduct": "Buy product",
+		"share": "Share",
+		"category": [
+			{
+				"id": "35",
+				"name": "Hot",
+				"title": "Jiggy Bonga - House of Funk That Hunts Your Junks",
+				"keyword": "Jiggy Bonga,Creative Design,Awesome Stuff,Cool Gifts,Fashion,Accessories,Beauty,Sports & Fitness,Kids,Electronics,Home & Garden",
+				"description": "Ever expanding list of creative stuff to buy online, so if you're looking for cool things to buy this is for you, not for the faint of wallet."
+			},
+			{
+				"id": "33",
+				"name": "Fashion",
+				"title": "Fashion Clothing,Shoes,Swimwear,Handbags and more on JiggyBonga.com",
+				"keyword": "Find a fashion selection of clothing,shoes and more from jiggybonga.com.Looking for trends in fashion!",
+				"description": "Ever expanding list of creative stuff to buy online, so if you're looking for cool things to buy this is for you, not for the faint of wallet."
+			},
+			{
+				"id": "20",
+				"name": "Creative Design",
+				"title": "Creative Stuff to Buy on JiggyBonga.com,Find Everything You Can Thinnk of!",
+				"keyword": "Awesome Stuff,Creative,Design,Cool Gifts,Idea,jiggybonga.com",
+				"description": "This is the best place to find products that have the most amazing or the dumbest ideas."
+			},
+			{
+				"id": "34",
+				"name": "Accessories",
+				"title": "Accessories Directory of Jewelry,Watches,Eyewear Frames,Belts & Cummerbunds and more on JiggyBonga.com",
+				"keyword": "Accessories,Jwewlry,Watches,Eyewear Frames, Belts & Cummerbunds, jiggybonga.com",
+				"description": "Find a wide selection of jewelry,watches and accessories from jiggybonga.com.Looking for trends in fashion!"
+			},
+			{
+				"id": "17",
+				"name": "Beauty",
+				"title": "Health & Beauty Directory of Nails Tools, Health Care and more on JiggyBonga.com",
+				"keyword": "beauty, beauty products,Hot selling, health care,health, makeup, skin, hair, nails, fragrance",
+				"description": "Find a wide selection of Health & Beauty,Nails & Tools and more from jiggybonga.com.Find everything you want and never thought of !"
+			},
+			{
+				"id": "16",
+				"name": "Sports & Fitness",
+				"title": "High-tech Sports & fitness supply. Directory of Sports Clothing, Fishing and more on JiggyBonga.com",
+				"keyword": "Clothing - Sports & Fitness,Sports & Entertainment,treadmills, elliptical trainers, yoga gear, strength training equipment, functional fitness gear, fitness technology, athletic clothing",
+				"description": "Find a wide selection of high-tech Sports & fitness supply,Sports Clothing and more from jiggybonga.com.Find everything you want and never thought of!"
+			},
+			{
+				"id": "18",
+				"name": "Kids",
+				"title": "Kids Directory of Baby Clothing, Toys, Games,Diapering & Feeding Items and more on JiggyBonga.com",
+				"keyword": "baby gifts, diapering, feeding items, strollers,toys,games",
+				"description": "Find a wide selection of Baby Clothing,Toys, Games,Diapering & Feeding tools and more from jiggybonga.com.Find everything you want and never thought of!"
+			},
+			{
+				"id": "11",
+				"name": "Electronics",
+				"title": "Electronics Directory of Computer Components, Networking and more on JiggyBonga.com",
+				"keyword": "Computer & Office, Computer Components, USB,Power,Case,Keybord,Mouse",
+				"description": "Find a wide selection of Computer Components, electronics accessories,iphone cases and more from jiggybonga.com. Find everything you want and never thought of!"
+			},
+			{
+				"id": "19",
+				"name": "Home & Garden",
+				"title": "Home & Garden Directory of Painting & Calligraphy, Clocks,Bedding,Barware, Cookware and more on JiggyBonga.com",
+				"keyword": "Barware, Cookware,Kitchen,Dining & Bar,Home Textile,Bedding, Window Treatments,Wall Paper, Garden furniture",
+				"description": "Find a wide selection of Painting & Calligraphy, Clocks,Bedding,Barware, Cookware and more from jiggybonga.com.Find everything you want and never thought of!"
+			}
+		]
+	},
+	"pl": {
+		"home" : "Polecam to",
+		"checkitout": "Sprawdź to",
+		"buyproduct": "Kup produkt",
+		"share": "Podziel się",
+		"category": [
+			{
+				"id": "",
+				"name": ""
+			},
+			{
+				"id": "",
+				"name": ""
+			}
+		]
+	},
+	"ae": {
+		"home" : "Recommendation",
+		"checkitout": "Check it out",
+		"buyproduct": "Buy product",
+		"share": "Share",
+		"category": [
+			{
+				"id": "",
+				"name": ""
+			},
+			{
+				"id": "",
+				"name": ""
+			}
+		]
+	},
+	"tr": {
+		"home" : "Tavsiye",
+		"checkitout": "Göz at",
+		"buyproduct": "Ürün satın al",
+		"share": "Paylaş",
+		"category": [
+			{
+				"id": "",
+				"name": ""
+			},
+			{
+				"id": "",
+				"name": ""
+			}
+		]
+	}
+}

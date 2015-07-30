@@ -1,0 +1,182 @@
+@import "../global.less";
+@import "../reset.less";
+@import "../header.less";
+
+.detail-wrapper{
+    .bgc(#ffffff);
+    .detail-content{
+        .pd(20px);
+        .detail-img{
+            .left();
+            .mr(20px);
+            img{
+                .w(450px);
+            }
+        }
+        .detail-title{
+            .fs(18px);
+            .fw();
+            .mb(20px);
+        }
+        .detail-des{
+            .fs(16px);
+            .l(20px);
+            font-family: -webkit-pictograph;
+        }
+        .detail-price{
+            .fs(14px);
+            .l(20px);
+            .mt(20px);
+            span{
+                .fb();
+            }
+            a{
+                .fc(#2F70A8);
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .detail-share{
+        .bgc(#EDF2F5);
+        border-top: 1px solid #e3e3e3;
+        .pd(5px 10px);
+        .share{
+            .left();
+            .mr(20px);
+            .l(46px);
+            .fc(#999999);
+            .fw(600);
+            .fs(16px);
+        }
+        .share-plugins{
+            .left();
+            .w(280px);
+            & a{
+                .left();
+                .i_block();
+                .w(45px);
+                .h(35px);
+                .l(40px);
+
+                .border-r();
+                .fs(18px);
+                .fw(400);
+                .mt(5px);
+                .mr(3px);
+                .c();
+                box-shadow: inset 0 -4px 0 rgba(0,0,0,0.2);
+            }
+            & .share-fbBtn{
+                .bgc(#4769A5);
+
+                &:hover{
+                    .bgc(#314b83);
+                }
+
+            }
+            & .share-twBtn{
+                .bgc(#65CCEF);
+
+                &:hover{
+                    .bgc(#0092ba);
+                }
+            }
+            & .share-gBtn{
+                .bgc(#bf3e1f);
+
+                &:hover{
+                    .bgc(#ab2b1d);
+                }
+            }
+            & .share-pinBtn{
+                .bgc(#cd252b);
+                &:hover{
+                    .bgc(#ae1319);
+                }
+            }
+
+            & .share-stuBtn{
+                .bgc(#eb4723);
+                &:hover{
+                    .bgc(#cf3f1e);
+                }
+            }
+
+            & .share-icon{
+                .i_block();
+                .w(20px);
+                .h(20px);
+                .l(20px);
+                .pd(10px);
+                .c();
+                background-image: url(http://a.thanksearch.com/ftpup/vres/v2/images/jiggybonga/sprite/jiggybonga_share.png);
+                background-repeat: no-repeat;
+                background-size: 20px 100px;
+                background-position: center 0;
+                cursor: pointer;
+            }
+            & .tw-ico{
+                background-position: center -20px;
+            }
+
+            & .google-ico{
+                background-position: center -40px;
+            }
+
+            & .pin-ico{
+                background-position: center -60px;
+            }
+
+            & .stu-ico{
+                background-position: center -95px;
+                background-size: 36px 117px;
+            }
+
+
+
+        }
+        .price{
+            .right();
+            span{
+                .right();
+                .f(20px);
+                .fb();
+                .l(50px);
+                .pr(10px);
+            }
+            a{
+                .right();
+                .bgc(#d9534f);
+                .border-r();
+                .pd(10px 16px);
+                .f(18px);
+                .fc(#ffffff);
+                .fw(400);
+                .right();
+                .mt(5px);
+                box-shadow:inset 0 -4px 0 rgba(0,0,0,0.2);
+                &:hover{
+                    .bgc(#c9302c);
+                }
+            }
+        }
+    }
+    min-height:360px;
+    box-shadow:0 2px 0 rgba(0,0,0,0.25);
+    .mb(30px);
+}
+
+
+.comment{
+    .bgc(#ffffff);
+    .mh(140px);
+    box-shadow:0 2px 0 rgba(0,0,0,0.25);
+    .mb(5px);
+    .w(1080px);
+    .c();
+    .fb-comments{
+        .mt(20px);
+    }
+}

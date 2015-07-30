@@ -1,0 +1,9 @@
+<nav class="nav">
+	<% for(var i = 0, l = dictionary.category.length; i < l; i++){ %>
+		<% if(type == dictionary.category[i].id){ %>
+			<a class="select" href="/<%= id2link[dictionary.category[i].id] %>"><%= dictionary.category[i].name %></a>
+		<% } else { %>
+			<a href="/<%= id2link[dictionary.category[i].id] %>"><%= dictionary.category[i].name %></a>
+		<% } %>
+	<% } %>
+</nav>

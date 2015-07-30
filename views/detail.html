@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<% for(var i = 0, l = dictionary.category.length; i < l; i++){ %><% if(type == dictionary.category[i].id){ %><title><%= dictionary.category[i].title %> - <%= data.title %></title>
+<meta name="keywords" content="<%= dictionary.category[i].keyword %> - <%= data.title %>" />
+<meta name="description" content="<%= dictionary.category[i].description %> - <%= data.title %>" /><% } %><% } %>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta property="og:site_name" content="jiggybonga">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="fb:app_id" content="813827822058403">
+<meta property="og:url" content="http://www.jiggybonga.com/">
+<meta property="og:title" content="<%= title %>">
+<meta property="og:description" content="<%= data.title %>">
+<meta property="og:image" content="<%= data.img %>">
+<meta property="og:image:width" content="787">
+<meta property="og:image:height" content="656">
+<meta property="article:author" content="http://www.jiggybonga.com">
+<!--<meta property="article:section" content="Gadgets">-->
+<meta property="article:tag" content="Home Stuff">
+<meta property="article:tag" content="Kids">
+<meta property="article:tag" content="Balloon">
+<meta property="article:tag" content="Stocking Stuffer">
+<meta property="article:tag" content="summer">
+<meta property="article:tag" content="water">
+
+<link rel="stylesheet" href="/style/css/detail.css">
+<script type="text/javascript">
+	var product_id = '<%= id %>';
+	var classType = '<%= type %>';
+	var nation = '<%= nation %>';
+	var typeName = '<%= typename %>';
+	var bong = window.bong||{};
+    	bong.pageName = "goods_<%= typename %>";
+</script>
+</head>
+<body>
+
+<% include htm/header.htm %>
+
+<% include htm/nav.htm %>
+
+<% function changeTwoDecimal_f(floatvar){
+    var f_x = parseFloat(floatvar);
+    if (isNaN(f_x)){
+        return false;
+    }
+    var f_x = Math.round(f_x * 100) / 100;
+    var s_x = f_x.toString();
+    var pos_decimal = s_x.indexOf('.');
+    if (pos_decimal < 0)
+    {
+        pos_decimal = s_x.length;
+        s_x += '.';
+    }
+    while (s_x.length <= pos_decimal + 2)
+    {
+        s_x += '0';
+    }
+    return s_x;
+} %>
+
+<div class="container">
+	<div class="wrapper-outer">
+
+		<div class="detail-wrapper">
+			<div class="detail-content clearfix" monkey="goods_click_<%= typename %>">
+				<div class="detail-img"><img src="<%= data.img %>"></div>
+				<div class="detail-title"><%= data.title %></div>
+				<div class="detail-price"><span><%= data.currency %> <%= changeTwoDecimal_f(data.price) %></span> · <a href="<%= 'http://click.v9.com/click?id='+data.linkid+'&site=jiggybonga' %>" target="_blank"><%= dictionary.buyproduct %></a></div>
+			</div>
+
+			<div class="detail-share clearfix">
+				<div class="share"><%= dictionary.share %></div>
+
+				<% include htm/share-plugins.htm %>
+
+				<div class="price" monkey="goods_click_<%= typename %>">
+					<a href="<%= 'http://click.v9.com/click?id='+data.linkid+'&site=jiggybonga' %>" target="_blank"><%= dictionary.checkitout %></a>
+					<span><%= data.currency %> <%= changeTwoDecimal_f(data.price) %></span>
+				</div>
+			</div>
+		</div>
+
+		<div class="comment clearfix">
+			<!-- comments plugins -->
+			<div class="fb-comments" data-href="http://www.jiggybonga.com/<%= typename %>/goods/<%= id %>" data-width="1040" data-numposts="5"></div>
+		</div>
+	</div>
+
+</div>
+
+<div class="container clearfix">
+	<div class="wrapper-outer">
+		<div class="wrapper-inner clearfix" id="container" temId="j-tmpl" monkey="goods_category_click_<%= typename %>">
+			<div class="list"></div>
+			<div class="list"></div>
+			<div class="list"></div>
+		</div>
+
+		<div class="loading"><img src="http://b.thanksearch.com/ftpup/vres/v2/images/jiggybonga/img/jiggybonga_loadingn.gif" alt=""/></div>
+	</div>
+
+</div>
+
+<% include tpl/water_item.htm %>
+<div class="rightSideBar">
+	<a href="/favorites">
+		<span class="collect-icon"></span>
+	</a>
+</div>
+<div class="returnTop">
+	<span class="arrowTop"></span>
+</div>
+
+<script type="text/javascript" src="/js/require.js" data-main="/js/min/detail"></script>
+<div id="fb-root"></div>
+
+<script type="text/javascript">
+
+	window.fbAsyncInit = function() {
+		FB.init({
+			appId  : '813827822058403',
+			status : true, // check login status
+			cookie : true, // enable cookies to allow the server to access the session
+			xfbml  : true  // parse XFBML
+		});
+	};
+
+	(function() {
+		var e = document.createElement('script');
+		e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+		e.async = true;
+		document.getElementById('fb-root').appendChild(e);
+	}());
+
+	function window_share(oUrl, oService) {
+		open_window(oUrl, oService, 3109);
+	}
+
+	function self_postcount(service, post_id) {
+		jQuery(document).trigger('essb_selfpostcount_action', [service, post_id]);
+	}
+	var wnd;
+
+	function open_window(oUrl, oService, oCountID) {
+		var wnd;
+		var w = 800;
+		var h = 500;
+		if (oService == "twitter") {
+			w = 500;
+			h = 300;
+		}
+		var left = (screen.width / 2) - (w / 2);
+		var top = (screen.height / 2) - (h / 2);
+		if (oService == "twitter") {
+			wnd = window.open(oUrl, "open_dialog", "height=300,width=500,resizable=1,scrollbars=yes,top=" + top + ",left=" + left);
+		} else {
+			wnd = window.open(oUrl, "open_dialog", "height=500,width=800,resizable=1,scrollbars=yes,top=" + top + ",left=" + left);
+		}
+		self_postcount(oService, oCountID);
+		var pollTimer = window.setInterval(function () {
+			if (wnd.closed !== false) {
+				window.clearInterval(pollTimer);
+				onclose_events(oService, oCountID);
+			}
+		}, 200);
+	}
+
+	function onclose_events(oService, oPostID) {
+		if (typeof (essbasc_popup_show) == 'function') {
+			essbasc_popup_show();
+		}
+		if (typeof essb_acs_code == 'function') {
+			essb_acs_code(oService, oPostID);
+		}
+	}
+</script>
+</body>
+</html>

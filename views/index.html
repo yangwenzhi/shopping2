@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<% for(var i = 0, l = dictionary.category.length; i < l; i++){ %><% if(type == dictionary.category[i].id){ %><title><%= dictionary.category[i].title %></title>
+<meta name="keywords" content="<%= dictionary.category[i].keyword %>" />
+<meta name="description" content="<%= dictionary.category[i].description %>" /><% } %><% } %>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="/style/css/index.css">
+<script type="text/javascript">
+	var classType = '<%= type %>';
+	var nation = '<%= nation %>';
+	var typeName = '<%= typename %>';
+	var bong = window.bong||{};
+        bong.pageName = "category_<%= typename %>";
+</script>
+</head>
+<body>
+
+<% include htm/header.htm %>
+
+<% include htm/nav.htm %>
+
+<% function changeTwoDecimal_f(floatvar){
+    var f_x = parseFloat(floatvar);
+    if (isNaN(f_x)){
+        return false;
+    }
+    var f_x = Math.round(f_x * 100) / 100;
+    var s_x = f_x.toString();
+    var pos_decimal = s_x.indexOf('.');
+    if (pos_decimal < 0)
+    {
+        pos_decimal = s_x.length;
+        s_x += '.';
+    }
+    while (s_x.length <= pos_decimal + 2)
+    {
+        s_x += '0';
+    }
+    return s_x;
+} %>
+
+<div class="container clearfix">
+	<div class="wrapper-outer">
+		<div class="wrapper-inner clearfix" id="container" temId="j-tmpl" monkey="category_click_<%= typename %>">
+			<div class="list">
+			<% if(type == "favorites") { %>
+				</div><div class="list">
+				</div><div class="list">
+		    <% } else { %>
+		    	<% data.forEach(function(it) { %>
+					<% if(data.indexOf(it) == 3 || data.indexOf(it) == 6) { %>
+						</div>
+						<div class="list">
+					<% } %>
+					<div class="product-item">
+				        <a class="goods-link" href="/<%= id2link[it.parity_cate] %>/goods/<%= it.id %>" target="_blank">
+				            <img src="<%= it.img.replace('original', '340x434x100x0x0x1') %>" width="340">
+				        </a>
+				        <div class="detail"><%= it.title %></div>
+						<div class="praise-count">
+							<span class="praise-count-ico"></span>
+							<%= it.favor %>
+						</div>
+				        <div class="price">
+				        	<span><%= it.currency %> <%= changeTwoDecimal_f(it.price) %></span>
+				        	<a href="<%= 'http://click.v9.com/click?id='+it.linkid+'&site=jiggybonga' %>" target="_blank"><%= dictionary.checkitout %></a>
+				        </div>
+				        <span class="heartBtn">
+			            	<i class="action_heart"></i>
+			            </span>
+			            <input type="hidden" value="<%= it.id %>">
+				    </div>
+			    <% }) %>
+		    <% } %>
+		    </div>
+		</div>
+
+		<div class="loading"><img src="http://b.thanksearch.com/ftpup/vres/v2/images/jiggybonga/img/jiggybonga_loadingn.gif" alt=""/></div>
+	</div>
+
+</div>
+
+<script type="text/javascript" src="/js/require.js" data-main="/js/min/index"></script>
+
+<% include tpl/water_item.htm %>
+<div class="rightSideBar">
+	<a href="/favorites">
+		<span class="collect-icon"></span>
+	</a>
+</div>
+<div class="returnTop">
+	<span class="arrowTop"></span>
+</div>
+</body>
+</html>

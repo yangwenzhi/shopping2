@@ -1,0 +1,57 @@
+<script>
+    var p;
+    if(localStorage.getItem("PRAISE")){
+        p =JSON.parse(localStorage.getItem('PRAISE'));
+    }else{
+        localStorage.setItem("PRAISE",JSON.stringify({}));
+        p = JSON.parse(localStorage.getItem('PRAISE'));
+    }
+    function changeTwoDecimal_f(floatvar){
+        var f_x = parseFloat(floatvar);
+        if (isNaN(f_x)){
+            return false;
+        }
+        var f_x = Math.round(f_x * 100) / 100;
+        var s_x = f_x.toString();
+        var pos_decimal = s_x.indexOf('.');
+        if (pos_decimal < 0)
+        {
+            pos_decimal = s_x.length;
+            s_x += '.';
+        }
+        while (s_x.length <= pos_decimal + 2)
+        {
+            s_x += '0';
+        }
+        return s_x;
+    }
+    var id2link=<% include ../../config/id2link.json %>;
+</script>
+
+<script id="j-tmpl" type="text/template">
+    <div class="product-item">
+        {{if( p[it.id] != undefined && p[it.id].split(',')[0] != 0){ }}
+            <a class="goods-link" href="/{{=p[it.id].split(',')[1]}}/goods/{{=it.id}}" target="_blank">
+        {{ }else{ }}
+            <a class="goods-link" href="/{{=id2link[it.parity_cate]}}/goods/{{=it.id}}" target="_blank">
+        {{ } }}
+            <img class="lazyload" src="http://b.thanksearch.com/ftpup/images/me/n2/deafault_img.png" _src="{{=it.img.replace('original', '340x434x100x0x0x1')}}" width="340">
+        </a>
+        <div class="detail">{{=it.title}}</div>
+        <div class="praise-count">
+            <span class="praise-count-ico"></span>
+            {{=it.favor}}
+        </div>
+        <div class="price">
+        	<span>{{=it.currency}} {{=changeTwoDecimal_f(it.price)}}</span>
+        	<a href="{{='http://click.v9.com/click?id='+it.linkid+'&site=jiggybonga'}}" target="_blank"><%= dictionary.checkitout %></a>
+        </div>
+        <span class="heartBtn">
+            {{if( p[it.id] != undefined && p[it.id].split(',')[0] != 0){ }}
+                <i class="action_heart hSelect"></i>
+            {{ }else{ }}
+                <i class="action_heart"></i>
+            {{ } }}
+        </span>
+    </div>
+</script>
